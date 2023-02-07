@@ -16,8 +16,7 @@ public class SharedData {
         return driver;
     }
 
-    //Folosim adnotarea de @BeforeMethod din TestNG ca sa accesam site-ul
-    @BeforeMethod
+
 
     public void Setup(){
         //Setam driverul pentru browser, utilizand un set de key si value;
@@ -34,13 +33,10 @@ public class SharedData {
         driver.get("https://demo.automationtesting.in/Index.html");
 
         //Folosim metoda wait implicit
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 
     }
-
-    //Folosim adnotarea @After din TestNG ca sa inchidem chestiile
-    @AfterMethod
 
     public void Clear(){
         //inchidem un browser

@@ -1,29 +1,28 @@
 package Tests;
 
+import Objects.FrameObject;
+import Pages.FramePage;
 import Pages.IndexPage;
 import Pages.RegisterPage;
-import Pages.WindowPage;
 import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class WindowTest extends Hooks {
+public class FrameTest extends Hooks {
 
     @Test
     public void MetodaTest() {
+
+        FrameObject frameObject = new FrameObject(TestData);
 
         IndexPage indexPage = new IndexPage(getDriver());
         indexPage.clickSkipSignIn();
 
         RegisterPage registerPage = new RegisterPage(getDriver());
-        registerPage.goToWindow();
+        registerPage.goToFrame();
 
-        WindowPage windowPage = new WindowPage(getDriver());
-        windowPage.tabProcess();
-        windowPage.windowProcess();
-        windowPage.tabsProcess();
-
+        FramePage framePage = new FramePage(getDriver());
+        framePage.singleFrame(frameObject);
+        framePage.multipleFrame(frameObject);
 
     }
-
-
 }
