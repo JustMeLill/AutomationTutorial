@@ -16,13 +16,16 @@ public class FrameTest extends Hooks {
 
         IndexPage indexPage = new IndexPage(getDriver());
         indexPage.clickSkipSignIn();
+        TestReport.attachReport("Pass", "I clicked on SignIn button.");
 
         RegisterPage registerPage = new RegisterPage(getDriver());
         registerPage.goToFrame();
+        TestReport.attachReport("Pass", "I open the Frame page.");
 
         FramePage framePage = new FramePage(getDriver());
         framePage.singleFrame(frameObject);
         framePage.multipleFrame(frameObject);
+        TestReport.attachReport("Pass", "I managed multiple Frame types.");
 
     }
 }

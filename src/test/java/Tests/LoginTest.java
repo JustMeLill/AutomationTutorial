@@ -15,9 +15,11 @@ public class LoginTest extends Hooks {
 
         IndexPage indexPage = new IndexPage(getDriver());
         indexPage.clickSignIn();
+        TestReport.attachReport("Pass", "I clicked on SignIn button.");
 
         LoginPage loginPage= new LoginPage(getDriver());
         loginPage.LoginInvalid(loginObject);
+        TestReport.attachReport("Pass", "I managed to validate invalid login.");
 
     }
 

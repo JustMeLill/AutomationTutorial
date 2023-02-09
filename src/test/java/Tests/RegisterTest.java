@@ -15,9 +15,11 @@ public class RegisterTest extends Hooks {
 
         IndexPage indexPage = new IndexPage(getDriver());
         indexPage.clickSkipSignIn();
+        TestReport.attachReport("Pass", "I clicked on SignIn button.");
 
         RegisterPage registerPage = new RegisterPage(getDriver());
         registerPage.registerProcess(registerObject);
+        TestReport.attachReport("Pass", "I filled in multiple register steps.");
 
 
     }

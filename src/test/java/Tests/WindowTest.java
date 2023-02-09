@@ -13,14 +13,17 @@ public class WindowTest extends Hooks {
 
         IndexPage indexPage = new IndexPage(getDriver());
         indexPage.clickSkipSignIn();
+        TestReport.attachReport("Pass", "I clicked on SignIn button.");
 
         RegisterPage registerPage = new RegisterPage(getDriver());
         registerPage.goToWindow();
+        TestReport.attachReport("Pass", "I opened the window page.");
 
         WindowPage windowPage = new WindowPage(getDriver());
         windowPage.tabProcess();
         windowPage.windowProcess();
         windowPage.tabsProcess();
+        TestReport.attachReport("Pass", "I managed multiple tabs and windows.");
 
 
     }

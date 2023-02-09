@@ -16,14 +16,17 @@ public class AlertTest extends Hooks {
 
         IndexPage indexPage = new IndexPage(getDriver());
         indexPage.clickSkipSignIn();
+        TestReport.attachReport("Pass", "I clicked on SignIn button.");
 
         RegisterPage registerPage = new RegisterPage(getDriver());
         registerPage.goToAlert();
+        TestReport.attachReport("Pass", "I open the Alert page.");
 
         AlertPage alertPage = new AlertPage(getDriver());
         alertPage.interactAlertOk();
         alertPage.interactAlertDismiss();
         alertPage.interactAlertValue(alertObject);
+        TestReport.attachReport("Pass", "I managed multiple Alert types.");
 
     }
 
