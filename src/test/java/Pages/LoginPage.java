@@ -14,7 +14,7 @@ public class LoginPage extends BasePage{
     @FindBy (css = "input[placeholder='E mail']")
     private WebElement Email;
 
-    @FindBy (xpath = "input[@placeholder='Password']")
+    @FindBy (css = "input[@placeholder='Password']")
     private WebElement Password;
 
     @FindBy (id = "enterbtn")
@@ -25,7 +25,6 @@ public class LoginPage extends BasePage{
 
 
     public void LoginInvalid(LoginObject loginObject){
-
         elementMethods.FillElement(Email, loginObject.getEmail());
         elementMethods.FillElement(Password, loginObject.getPassword());
         elementMethods.ClickElement(Enter);
