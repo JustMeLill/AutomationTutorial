@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="39.671" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="40.663" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
@@ -69,9 +69,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="MetodaTest" classname="Tests.LoginTest" time="1.093"/>
-  <testcase name="MetodaTest" classname="Tests.AlertTest" time="5.395"/>
-  <testcase name="MetodaTest" classname="Tests.RegisterTest" time="5.956"/>
-  <testcase name="MetodaTest" classname="Tests.WindowTest" time="6.117"/>
-  <testcase name="MetodaTest" classname="Tests.FrameTest" time="34.993"/>
+  <testcase name="MetodaTest" classname="Tests.LoginTest" time="1.271"/>
+  <testcase name="MetodaTest" classname="Tests.RegisterTest" time="5.566"/>
+  <testcase name="MetodaTest" classname="Tests.AlertTest" time="6.076"/>
+  <testcase name="MetodaTest" classname="Tests.WindowTest" time="6.346"/>
+  <testcase name="MetodaTest" classname="Tests.FrameTest" time="35.649"/>
 </testsuite>
