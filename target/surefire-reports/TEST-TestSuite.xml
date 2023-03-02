@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="40.663" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="43.09" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
@@ -44,11 +44,11 @@
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="Liliana"/>
     <property name="java.class.path" value="C:\Automation\apache-maven-3.9.0-bin\apache-maven-3.9.0\boot\plexus-classworlds-2.6.0.jar"/>
-    <property name="ci_cd" value="false"/>
+    <property name="ci_cd" value="true"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Dci_cd=true"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -56,7 +56,6 @@
     <property name="java.version" value="1.8.0_202"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
-    <property name="webdriver.chrome.driver" value="src/test/resources/Driver/chromedriver.exe"/>
     <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Automation\apache-maven-3.9.0-bin\apache-maven-3.9.0"/>
@@ -69,9 +68,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="MetodaTest" classname="Tests.LoginTest" time="1.271"/>
-  <testcase name="MetodaTest" classname="Tests.RegisterTest" time="5.566"/>
-  <testcase name="MetodaTest" classname="Tests.AlertTest" time="6.076"/>
-  <testcase name="MetodaTest" classname="Tests.WindowTest" time="6.346"/>
-  <testcase name="MetodaTest" classname="Tests.FrameTest" time="35.649"/>
+  <testcase name="MetodaTest" classname="Tests.LoginTest" time="1.384"/>
+  <testcase name="MetodaTest" classname="Tests.RegisterTest" time="3.927"/>
+  <testcase name="MetodaTest" classname="Tests.WindowTest" time="3.972"/>
+  <testcase name="MetodaTest" classname="Tests.AlertTest" time="4.837"/>
+  <testcase name="MetodaTest" classname="Tests.FrameTest" time="33.514"/>
 </testsuite>
